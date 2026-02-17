@@ -1,6 +1,6 @@
 const usuarioService = require('../services/usuario.service');
 
-const crearUsuario = async (req, res) => {
+const crear = async (req, res) => {
     try {
         const nuevoUsuario = await usuarioService.crearUsuario(req.body);
         res.status(201).json(nuevoUsuario);
